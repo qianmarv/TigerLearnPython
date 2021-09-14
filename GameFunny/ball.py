@@ -2,15 +2,15 @@ import pgzrun
 pgzrun.go()
 width=800
 height=600
-x=width/2
 y=height/2
+x=width/2
 spead_x=3
-spead_y=5
+spead_y=3
 r=30
 def draw():
-    screen.fill('white')
-    screen.draw.filled_circle((x,y),r,'red')
-
+    #screen.fill('white')
+    #screen.draw.filled_circle((x,y),r,'red')
+    screen.draw.line((x,y),(x,y),'red')
 def update():
     global x,y,spead_x,spead_y
     x=x+spead_x
